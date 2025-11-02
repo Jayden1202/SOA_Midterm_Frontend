@@ -1,0 +1,14 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glass { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(12px); border-radius: 16px; }
+.btn { @apply px-4 py-2 rounded-xl font-semibold hover:opacity-90 transition disabled:opacity-50; }
+.btn-primary { @apply bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white; }
+.input { @apply bg-slate-900/60 border border-slate-700/60 rounded-xl px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500; }
+.label { @apply text-sm text-slate-300; }
+.card { @apply glass p-4 shadow-lg; }
+.link { @apply text-indigo-400 hover:text-indigo-300 underline; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: .5rem .25rem; }
